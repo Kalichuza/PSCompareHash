@@ -1,4 +1,4 @@
-function Compare-FileHash {
+function Test-FileHash {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory=$true, Position=0)]
