@@ -1,0 +1,40 @@
+
+### 4. `en-US\PSCompareHash-help.xml`
+The help file should also be updated:
+
+```xml
+<helpItems schema="maml">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
+    <command:details>
+      <command:name>Test-FileHash</command:name>
+      <maml:description>
+        <maml:para>Compares the hash of a file against a provided hash.</maml:para>
+      </maml:description>
+    </command:details>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:description>
+          <maml:para>Compares the hash of a file against a provided hash.</maml:para>
+        </maml:description>
+        <command:parameter required="true" position="0">
+          <maml:name>FilePath</maml:name>
+          <maml:description>
+            <maml:para>The path to the file.</maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="true" position="1">
+          <maml:name>ProvidedHash</maml:name>
+          <maml:description>
+            <maml:para>The hash to compare against.</maml:para>
+          </maml:description>
+        </command:parameter>
+        <command:parameter required="false" position="2">
+          <maml:name>Algorithm</maml:name>
+          <maml:description>
+            <maml:para>The hashing algorithm to use (e.g., SHA256, SHA1, MD5).</maml:para>
+          </maml:description>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+  </command:command>
+</helpItems>
