@@ -1,0 +1,24 @@
+.TOPIC
+    about_PSCompareHash
+
+.SHORT DESCRIPTION
+    Provides functionality to compare file hashes against a provided hash.
+
+.LONG DESCRIPTION
+    The PSCompareHash module includes the Test-FileHash function, which allows users to calculate the hash of a specified file using a variety of algorithms (SHA256, SHA1, MD5, etc.) and compare it against a provided hash. This is useful for verifying the integrity of files.
+
+.FUNCTIONS
+
+    Test-FileHash
+
+.EXAMPLES
+
+    Test-FileHash -FilePath "C:\path\to\file.txt" -ProvidedHash "yourProvidedHash" -Algorithm "SHA256"
+    This example calculates the SHA256 hash of the file and compares it with the provided hash.
+
+.NOTES
+    Author: kalichuza
+    Version: 1.0.0
+
+.LINK
+    https://github.com/Kalichuza/PSCompareHash
